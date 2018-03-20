@@ -1,0 +1,25 @@
+language: node_js
+node_js:
+  - "8.9.4"
+
+branches:
+  only:
+    - master
+
+script:
+  - npm run build
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  on:
+    branch: master
+
+local-dir: "/dist"
+
+notifications:
+  email:
+    recipients:
+      ellipse120@gmail.com
