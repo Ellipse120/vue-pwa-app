@@ -2,6 +2,7 @@
 
 > Make PWA App using Vue.js
 
+DEMO<https://ellipse120.github.io/vue-pwa-app/>
 
 ![Build Status](https://travis-ci.org/Ellipse120/vue-pwa-app.svg?branch=master)
 
